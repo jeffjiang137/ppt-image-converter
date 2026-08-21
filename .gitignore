@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.builddeps/
+
+# Local configuration and generated artifacts
+.ppt_image_converter_config.json
+build/
+dist/
+*.spec
+
+# IDE and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
