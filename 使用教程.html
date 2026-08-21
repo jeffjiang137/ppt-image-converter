@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PPT 图片互转工具 · 使用教程</title>
+  <style>
+    :root { --blue:#1677ff; --ink:#182230; --muted:#607086; --line:#e7edf5; --bg:#f5f8fc; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif; color:var(--ink); background:var(--bg); line-height:1.7; }
+    .hero { color:#fff; padding:76px 24px 92px; background:radial-gradient(circle at 14% 15%,#4da1ff 0,transparent 28%),linear-gradient(128deg,#0958d9,#1677ff 55%,#42a5ff); }
+    .wrap { width:min(1080px,calc(100% - 40px)); margin:0 auto; }
+    .badge { display:inline-block; border:1px solid rgba(255,255,255,.45); border-radius:999px; padding:4px 12px; font-size:13px; }
+    h1 { font-size:clamp(32px,5vw,52px); margin:16px 0 8px; letter-spacing:-1px; }
+    .hero p { max-width:650px; opacity:.9; font-size:18px; margin:0; }
+    main { margin-top:-46px; padding-bottom:64px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:18px; padding:28px; margin:18px 0; box-shadow:0 14px 40px rgba(38,73,120,.07); }
+    h2 { margin:0 0 15px; font-size:23px; }
+    h3 { margin:22px 0 8px; font-size:17px; }
+    .lead { color:var(--muted); margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .step { border:1px solid var(--line); border-radius:12px; padding:16px; background:#fbfdff; }
+    .step b { display:block; color:var(--blue); font-size:13px; margin-bottom:4px; }
+    .tip { border-left:4px solid var(--blue); background:#eef6ff; padding:13px 16px; border-radius:0 10px 10px 0; color:#315173; }
+    .warn { border-left-color:#faad14; background:#fffbe6; color:#765b14; }
+    img { display:block; width:100%; border:1px solid var(--line); border-radius:12px; margin:16px 0; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:5px; font-family:Consolas,monospace; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    td,th { text-align:left; padding:11px; border-bottom:1px solid var(--line); }
+    th { color:var(--muted); font-weight:600; }
+    footer { color:var(--muted); text-align:center; font-size:13px; padding:12px; }
+    @media (max-width:720px) { .grid { grid-template-columns:1fr; } .card { padding:20px; } .hero { padding-top:52px; } }
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap">
+    <span class="badge">Windows 桌面工具 · v3.3</span>
+    <h1>PPT 图片互转工具</h1>
+    <p>把 PPT 批量导出为高清图片，或将多张图片按顺序快速合成为 PPTX。</p>
+  </div></header>
+  <main class="wrap">
+    <section class="card">
+      <h2>开始前</h2><p class="lead">双击 EXE 即可使用。若你要将 PPT 导出为图片，请先安装 Microsoft PowerPoint 或 LibreOffice。</p>
+      <div class="grid"><div class="step"><b>01 · 选择模式</b>左侧切换“PPT 导出图片”或“图片合成 PPT”。</div><div class="step"><b>02 · 导入素材</b>点击添加，或直接把文件、文件夹拖进窗口。</div><div class="step"><b>03 · 设置并执行</b>在右侧选择参数，点击蓝色主按钮完成转换。</div></div>
+    </section>
+    <section class="card">
+      <h2>教程一：PPT 批量导出图片</h2>
+      <ol><li>切换到 <b>“PPT 导出图片”</b>。</li><li>拖入一个或多个 <code>.ppt</code>、<code>.pptx</code> 或包含它们的文件夹。</li><li>在右侧选择 PNG/JPG、DPI 和输出目录。</li><li>点击 <b>“开始导出图片”</b>，进度与结果会显示在底部状态栏。</li></ol>
+      <img src="界面预览_v3.3_PPT导出.png" alt="PPT 导出图片界面">
+      <div class="tip">建议：网页与电商图用 <b>PNG + 200 DPI</b>；印刷或局部放大用 <b>PNG + 300 DPI</b>；需要较小文件时用 <b>JPG + 90–95 质量</b>。</div>
+    </section>
+    <section class="card">
+      <h2>教程二：多张图片合成 PPT</h2>
+      <ol><li>切换到 <b>“图片合成 PPT”</b>。</li><li>拖入图片或图片文件夹，支持 PNG、JPG、WEBP、TIFF 等。</li><li>直接拖动列表中的行调整幻灯片页序；缩略图悬停可放大预览。</li><li>选择页面比例、背景和图片布局，设置保存位置后点击 <b>“生成 PPT 文件”</b>。</li></ol>
+      <img src="界面预览_v3.3_图片列表.png" alt="图片合成 PPT 界面">
+      <table><thead><tr><th>布局</th><th>适用情况</th></tr></thead><tbody><tr><td>完整显示（不裁切）</td><td>保持图片全部内容，可能留白。</td></tr><tr><td>铺满页面（居中裁切）</td><td>视觉更饱满，边缘内容可能被裁掉。</td></tr></tbody></table>
+    </section>
+    <section class="card">
+      <h2>常见问题</h2>
+      <h3>找不到可用导出引擎</h3><p>安装 Microsoft PowerPoint，或安装免费 LibreOffice 后重新打开工具。</p>
+      <h3>导出的字体、版式有变化</h3><p>优先使用 Microsoft PowerPoint 导出，并确保系统已安装演示文稿所使用的字体。</p>
+      <h3>JPG 背景变白</h3><p>JPG 不支持透明通道；如需透明背景，请使用 PNG。</p>
+      <div class="tip warn">提示：拖放不工作时，请确认应用没有以管理员权限启动；Windows 不允许低权限资源管理器向管理员程序拖放文件。</div>
+    </section>
+  </main>
+  <footer>PPT 图片互转工具 · 如果它帮到了你，欢迎在 GitHub 点一个 Star ⭐</footer>
+</body>
+</html>
